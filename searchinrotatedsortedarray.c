@@ -5,12 +5,12 @@ int search(int A[],int n,int t)
     x= 0;
     y = n - 1;
     while (x <= y) {
-        z= (x + y) / 2;
-        if (A[z] == t)
+        z=(x + y)/2;
+        if(A[z] == t)
          return z;
         
-        if (A[x] <= A[z]) { 
-            if (A[x] <= t && t < A[z]) { 
+        if(A[x] <= A[z]) { 
+            if(A[x] <= t && t < A[z]) { 
                 y = z - 1;
             }
             else {
@@ -18,7 +18,7 @@ int search(int A[],int n,int t)
             }
         }
         else {
-            if (A[z] < t && t <= A[y]) { 
+            if(A[z] < t && t <= A[y]) { 
                 x = z + 1;
             }
             else {
@@ -29,7 +29,8 @@ int search(int A[],int n,int t)
     return -1;
 }
 
-int main() {
+int main()
+{
     int num[] = { 4, 3, 9 };
     printf("%d\n", search(num,sizeof(num)/sizeof(num[0]), 1));
     return 0;
