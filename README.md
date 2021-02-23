@@ -1,3 +1,3 @@
-# 187R1A05L6       -Roll Number
-# Sriram Makkapati -Name
-# CSE-D            -Section 
+# Roll Number : 187R1A05L6       
+# Name        :Sriram Makkapati 
+# Section     :CSE-D            
